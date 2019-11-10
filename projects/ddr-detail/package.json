@@ -1,0 +1,12 @@
+{
+  "name": "ddr-detail",
+  "version": "8.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.13",
+    "@angular/core": "^8.2.13"
+  },
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "font-awesome": "4.7.0"
+  }
+}

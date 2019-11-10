@@ -1,0 +1,20 @@
+
+
+<p>{{'Modo actual: ' +actualMode}}</p>
+
+<button (click)="openEstandar()">Estandar</button>
+<button (click)="openDelay()">Delay</button>
+<button (click)="openDesactivated()">Desactivated</button>
+
+<div *ngIf="showEstandar" ddrClickOutside (clickOutside)="clickOutside($event)" class="block">
+  <p>Click outside this div</p>
+</div>
+
+<div *ngIf="showDelay" ddrClickOutside [clickOutsideDelay]="5000" (clickOutside)="clickOutside($event)" class="block">
+  <p>Click outside this div</p>
+</div>
+
+<div *ngIf="showDesactivated" ddrClickOutside [clickOutsideEnabled]="false" (clickOutside)="clickOutside($event)" class="block">
+  <p>Click outside this div</p>
+</div>
+

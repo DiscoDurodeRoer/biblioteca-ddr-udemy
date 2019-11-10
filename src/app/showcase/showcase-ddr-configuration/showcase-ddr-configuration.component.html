@@ -1,0 +1,22 @@
+
+<h3>Recoger valor simple</h3>
+<p>
+  {{'variable1' | getDataConf}}
+</p>
+
+
+<h3>Recoger valor anidado</h3>
+<p>
+  {{'variable3.subvariable1' | getDataConf}}
+</p>
+
+<h3>Mostrar valor segun el estado</h3>
+<p *ngIf="'showElement' | getDataConf">
+  Me puedo mostrar
+</p>
+
+<h3>Mostrando varios valores</h3>
+<p *ngFor="let item of ('values' | getDataConf)">
+  {{item.label + " - " + item.value}}
+</p>
+

@@ -1,0 +1,69 @@
+ddr-dropdown .ddr-dropdown{
+    min-width: 100px;
+    position: relative;
+}
+
+ddr-dropdown .form-control[readonly] {
+    background: #FFF;
+    cursor: pointer;
+}
+
+ddr-dropdown input:focus {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+
+ddr-dropdown .ddr-dropdown button {
+    height: 100%;
+    width: 32px;
+    background-color: transparent;
+    border-color: transparent;
+    position: absolute;
+    right: 0px;
+    z-index: 999;
+}
+
+ddr-dropdown .panel-items{
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    background: #FFF;
+}
+
+ddr-dropdown .panel-items ul {
+    margin: 0px;
+    padding: 0px;
+    max-height: 200px;
+    overflow: auto;
+    border: 1px solid #c8c8c8;
+    border-top: 0px;
+}
+
+ddr-dropdown .panel-items ul li{
+    list-style: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+ddr-dropdown .panel-items ul li:hover{
+    background: #aefff48c;
+}
+
+
+ddr-dropdown .no-results {
+    padding: 5px;
+    border: 1px solid #c8c8c8;
+    font-size: 11px;
+    font-style: italic;
+
+}
+
+ddr-dropdown .ddr-dropdown input {
+    border-radius: 0px;
+    outline: 0px;
+}
+
+ddr-dropdown .input-group-append{
+    margin-left: 0px;
+}

@@ -1,0 +1,20 @@
+<div class="ddr-detail" *ngIf="showDetail" [@slide]>
+
+  <div class="row">
+    <div class="col-lg-11 col-md-9 col-8">
+      <ng-content select="[detail-title]"></ng-content>
+    </div>
+    <div class="col-lg-1 col-md-3 col-3 p-3">
+      <i class="fa fa-times close" (click)="closeDetail()"></i>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <ng-content select="[detail-content]"></ng-content>
+    </div>
+  </div>
+
+</div>
+
+<div class="overlay"></div>

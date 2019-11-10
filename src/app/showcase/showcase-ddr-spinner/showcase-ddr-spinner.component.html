@@ -1,0 +1,18 @@
+
+<div>
+    {{'Modo actual: ' + (embedded ? 'Embebido' : 'No esta embebido')}}
+</div>
+
+<div>
+    <button (click)="activarSpinner()">Activar spinner</button>
+    <button (click)="cambiarModo()">Cambiar modo</button>    
+</div>
+
+<div class="embedded">
+
+    <ddr-spinner *ngIf="embedded" [embedded]="true"></ddr-spinner>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam id cumque laudantium culpa voluptatum ea accusantium facere quam eos suscipit, voluptates unde possimus mollitia, illo quos incidunt fugit labore iure?</p>
+</div>
+
+<ddr-spinner *ngIf="!embedded"></ddr-spinner>

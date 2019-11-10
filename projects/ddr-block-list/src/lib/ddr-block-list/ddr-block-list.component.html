@@ -1,0 +1,45 @@
+<div class="row ddr-block-list">
+  <div class="col-12">
+
+    <div class="row" *ngIf="!blockItems || blockItems.length === 0">
+      <div class="col-12 text-center">
+        <span>{{labelNoResults}}</span>
+      </div>
+    </div>
+
+    <div class="row" *ngIf="blockItems?.length > 0">
+      <div class="col-12">
+
+        <ddr-block-list-item *ngFor="let blockItem of blockItems | paginate: { itemsPerPage: pagination, currentPage: page }; let index = index"
+          [blockItem]="blockItem"
+          [id]="index"
+          [templateHeader]="templateHeader"
+          [templateInfoAdditional]="templateInfoAdditional"
+          [templateData]="templateData"
+          [showHeader]="showHeader"
+          [showInfoAdditional]="showInfoAdditional"
+          [showBorder]="showBorder"
+          [showActions]="showActions"
+          (actionSelected)="sendAction($event)"
+          (closeOptions)="closeAllOptionsExcept($event)"
+          (click)="selectItem(blockItem.item)">
+
+        </ddr-block-list-item>
+
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="row" *ngIf="blockItems.length > pagination">
+      <div class="col-12 p-4 text-center">
+        <pagination-controls
+          [previousLabel]="previousLabel"
+          [nextLabel]="nextLabel" 
+          (pageChange)="page = $event"></pagination-controls>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+

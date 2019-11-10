@@ -1,0 +1,42 @@
+
+<div class="row block-item" [attr.id]="'block-item-'+id" 
+  [ngStyle]="{'border-color': showBorder ? blockItem.borderColor : '', 'border-left-width.px': showBorder ? 10 : ''}">
+
+  <div class="col-md-2 col-12 info-additional" *ngIf="showInfoAdditional">
+    <ng-template *ngTemplateOutlet="templateInfoAdditional; context: {item: blockItem.item}"></ng-template>
+  </div>
+  <div class="col-12 data" [ngClass]="{'col-md-10': showInfoAdditional}">
+    <div class="row" *ngIf="showHeader">
+      <div class="col-12" >
+        <ng-template *ngTemplateOutlet="templateHeader; context: {item: blockItem.item}"></ng-template>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <ng-template *ngTemplateOutlet="templateData; context: {item: blockItem.item}"></ng-template>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="actions" *ngIf="showActions">
+    <i class="fa fa-ellipsis-v" (click)="openOptions($event)"></i>
+    <ul class="options-panel" ddrClickOutside (clickOutside)="hideOptions()" *ngIf="showOptions">
+      <li *ngFor="let action of blockItem.actions" (click)="sendAction($event, action)">
+        <div class="row no-gutters">
+          <div class="col-11">
+            <span>{{action.label}}</span>
+          </div>
+          <div class="col-1">
+            <i [class]="action.icon" *ngIf="action.icon"></i>
+          </div>
+        </div>
+
+      </li>
+    </ul>
+
+
+  </div>
+
+</div>
+

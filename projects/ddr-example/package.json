@@ -1,0 +1,23 @@
+{
+  "name": "ddr-example",
+  "version": "8.0.1",
+  "author": {
+    "email": "administrador@discoduroderoer.es",
+    "name": "discoduroderoer",
+    "url": "http://www.discoduroderoer.es"
+  },
+  "description": "Ejemplo proyecto biblioteca",
+  "keywords": [
+    "angular",
+    "ejemplo",
+    "biblioteca"
+  ],
+  "repository": {
+    "url": "https://github.com/DiscoDurodeRoer"
+  },
+  "homepage": "http://demo.page.com",
+  "peerDependencies": {
+    "@angular/common": "^8.2.9",
+    "@angular/core": "^8.2.9"
+  }
+}

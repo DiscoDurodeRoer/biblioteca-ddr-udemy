@@ -1,0 +1,15 @@
+
+ddr-block-data-item .ddr-block-data-item{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+ddr-block-data-item .ddr-block-data-item .label{
+    color: #c8c8c8;
+    font-size: 14px;
+}
+
+ddr-block-data-item .ddr-block-data-item .value{
+    color: #000;
+    font-size: 12px;
+}

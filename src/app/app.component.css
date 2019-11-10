@@ -1,0 +1,7 @@
+.showcase, .menu {
+    padding: 5px;
+}
+
+.menu{
+    border-bottom: 1px solid #000;
+}

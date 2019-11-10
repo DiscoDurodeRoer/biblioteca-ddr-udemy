@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-4 mt-4">
+        <ddr-dropdown 
+            [valueSelect]="valueSelect" 
+            [options]="options"
+            labelNoResults="No hay resultados que mostrar"
+            (select)="selectItem($event)">
+
+            <ng-template itemTemplate let-item="item">
+                {{item.label + " - " + item.value}}
+            </ng-template>
+
+        </ddr-dropdown>
+
+        <p>Este texto no deberia verse al abrir el dropdown</p>
+
+    </div>
+</div>

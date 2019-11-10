@@ -1,0 +1,38 @@
+ddr-detail .ddr-detail{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #FFF;
+    padding: 15px;
+    border: 1px solid #000;
+    z-index: 9999;
+    height: 100%;
+}
+
+ddr-detail .ddr-detail .close{
+    font-size: 26px;
+    cursor: pointer;
+}
+
+ddr-detail .overlay{
+    z-index: 9998;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:hsla(0, 0%, 100%, .6);
+    cursor: default;
+}
+
+@media (min-width: 992px){
+    ddr-detail .ddr-detail{
+        width: 40%;;
+    }
+}
+
+@media (max-width: 992px){
+    ddr-detail .ddr-detail{
+        width: 100%;;
+    }
+}

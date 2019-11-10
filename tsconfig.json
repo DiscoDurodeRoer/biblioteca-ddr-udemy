@@ -1,0 +1,90 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "ddr-example": [
+        "dist/ddr-example"
+      ],
+      "ddr-example/*": [
+        "dist/ddr-example/*"
+      ],
+      "ddr-join-pipe": [
+        "dist/ddr-join-pipe"
+      ],
+      "ddr-join-pipe/*": [
+        "dist/ddr-join-pipe/*"
+      ],
+      "ddr-spinner": [
+        "dist/ddr-spinner"
+      ],
+      "ddr-spinner/*": [
+        "dist/ddr-spinner/*"
+      ],
+      "ddr-toast": [
+        "dist/ddr-toast"
+      ],
+      "ddr-toast/*": [
+        "dist/ddr-toast/*"
+      ],
+      "ddr-click-outside": [
+        "dist/ddr-click-outside"
+      ],
+      "ddr-click-outside/*": [
+        "dist/ddr-click-outside/*"
+      ],
+      "ddr-dropdown": [
+        "dist/ddr-dropdown"
+      ],
+      "ddr-dropdown/*": [
+        "dist/ddr-dropdown/*"
+      ],
+      "ddr-load-iframe": [
+        "dist/ddr-load-iframe"
+      ],
+      "ddr-load-iframe/*": [
+        "dist/ddr-load-iframe/*"
+      ],
+      "ddr-configuration": [
+        "dist/ddr-configuration",
+        "dist/ddr-configuration"
+      ],
+      "ddr-configuration/*": [
+        "dist/ddr-configuration/*",
+        "dist/ddr-configuration/*"
+      ],
+      "ddr-detail": [
+        "dist/ddr-detail"
+      ],
+      "ddr-detail/*": [
+        "dist/ddr-detail/*"
+      ],
+      "ddr-block-list": [
+        "dist/ddr-block-list"
+      ],
+      "ddr-block-list/*": [
+        "dist/ddr-block-list/*"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  }
+}
